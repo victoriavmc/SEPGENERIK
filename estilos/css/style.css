@@ -1,0 +1,721 @@
+:root {
+  --color-barra-laterl: #0484bc;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Bitter";
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+p {
+  color: black;
+  font-size: 2rem;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bitter";
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+.barra-superior {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 53, 103);
+  padding: 2rem;
+  height: 10%;
+}
+
+.titulo-header {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: start;
+}
+
+.fecha-header {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  padding-top: 4px;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+/* Section */
+.informacion {
+  height: 11%;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+}
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cuadro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 95%;
+  width: 95%;
+  border-radius: 2rem;
+  border-color: black;
+  border-style: dashed;
+}
+.nombre-colegio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.texto-nombre {
+  font-size: 3rem;
+}
+
+/* Main */
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/Fondo.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 72%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 65%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.contenido {
+  position: absolute;
+  display: grid;
+  column-gap: 8rem;
+  grid-template-columns: 2fr 1.5fr;
+}
+
+.contenido-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.SEP {
+  color: white;
+  font-weight: 700;
+}
+
+/* Formulario */
+.fondo-formulario {
+  background-color: white;
+  border-radius: 5rem;
+  border-color: black;
+  border-style: solid;
+  border-width: 0.3rem;
+  width: 100%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 420px;
+  width: 420px;
+
+}
+
+label,
+input {
+  display: block;
+}
+
+.formulario-titulo {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.formulario-campos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: dashed;
+  border-radius: 5rem;
+  margin-top: 2rem;
+  height: 22rem;
+  width: 27rem;
+} 
+
+.boton-centrar {
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  margin-top: 1rem;
+  width: 80%;
+}
+
+input {
+  border-radius: 1rem;
+}
+
+.recuperar-cuenta {
+  font-size: 1.3rem;
+  color: rgb(0, 53, 103);
+}
+
+a:hover {
+  color: blueviolet;
+}
+
+.roles {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  border-radius: 5rem;
+  border-width: 0.3rem;
+  border-style: solid;
+  height: 110px;
+  width: 426px;
+}
+
+.rol-directivo {
+  border-right: 2px dashed black;
+}
+
+.rol-maestro {
+  border-left: 2px dashed black;
+}
+
+.texto-rol {
+  color: black;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.texto-rol-inicio {
+  line-height: 10pt;
+  margin-top: 1rem;
+}
+
+/* Footer */
+.barra-inferior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(102, 102, 102);
+  margin: 0;
+  height: 7%;
+}
+
+.footer-texto {
+  color: white;
+  margin: 0;
+  font-size: 1.4rem;
+  margin-right: 2rem;
+}
+
+/* Imagenes */
+.logo {
+  width: 7rem;
+  height: 7rem;
+  margin: 0;
+  border-radius: 100%;
+}
+
+.logo-contacto {
+  width: 6rem;
+  padding: 0.5rem;
+}
+
+.logo-inferior {
+  width: 3.5rem;
+  margin-left: 1rem;
+  border-radius: 100%;
+}
+
+.imagen-rol {
+  width: 6rem;
+  margin-top: 10px;
+}
+.imagen-rol-inicio {
+  width: 10rem;
+  height: 10rem;
+  margin: 0;
+}
+
+/* Botones */
+.rol-directivo,
+.rol-maestro {
+  padding: 0.6rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.button-rol {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.2s;
+  border: 2px double transparent;
+}
+.button-rol:hover {
+  border-radius: 10px;
+  border: double;
+  box-shadow: 0 0 10px 3px #55dbef;
+}
+
+/* Media query */
+@media (max-width: 1024px ) {
+  .formulario {
+    width: 30rem;
+    height: 30rem;
+  }
+  .formulario-campos {
+    margin: 0;
+    padding: 0;
+    width: 24rem;
+    height: 20rem;
+    margin-top: 2rem;
+  }
+  .formulario-titulo {
+    margin: 0;
+  }
+  .fondo-formulario {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagen-rol-inicio {
+    width: 8rem;
+    height: 8rem;
+  }
+  .imagen-rol {
+      height: 5.6rem;
+  }
+  .button-rol {
+    padding: 0;
+  }
+  .texto-rol-inicio {
+    font-size: 2.5rem;
+  }
+  .boton {
+    margin: 0;
+  }
+  .roles {
+    width: 29.6rem;
+    height: 10rem;
+  }
+  .contenido-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .logo-inferior {
+    width: 3rem;
+    height: 3rem;
+  }
+  .barra-superior {
+    padding: 1rem;
+  }
+  .titulo-header {
+    font-size: 3rem;
+  }
+  .fecha-header {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+    .texto-nombre {
+      font-size: 2rem;
+    }
+    .cuadro {
+      justify-content: center;
+      border-radius: 0;
+      width: 90%;
+      height: 90%;
+    }
+    .logo-contacto {
+      width: 5rem;
+      height: 5rem;
+    }
+    .contenido {
+      display: flex;
+      flex-direction: column;
+    }
+    .SEP {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .contenido-titulo {
+      margin-bottom: 3rem;
+    }
+    .fondo-formulario {
+      width: 90%;
+    }
+    .roles {
+      width: 90%;
+    }
+}
+
+
+
+/* Pagina Admin */
+.contenedor-pagina {
+  display: flex;
+  height: 87%;
+  width: 100%;
+  background-color: white;
+}
+
+/* Contenido principal */
+.contenido-principal {
+  flex: 1;
+  background-image: url(../img/Fondo\ Colegio.png);
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size:auto;
+  background-color: #b4dcf4;
+}
+
+/* Barra lateral */
+.cerrar-sesion {
+  display: flex;
+  justify-content: end;
+  white-space: nowrap;
+  color: white;
+}
+.barra-lateral {
+  width: 350px;
+  height: 100%;
+  padding: 2rem 1.5rem;
+  background-color: var(--color-barra-laterl);
+  transition: width 0.5s ease;
+}
+.min-barra-lateral {
+  width: 90px;
+}
+.barra-lateral .nombre-pagina {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+.barra-lateral .nombre-pagina .nombres {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+}
+.nombre-usuario {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.rol-usuario {
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.oculto {
+  opacity: 0;
+}
+.barra-lateral .nombre-pagina .imagen-usuario {
+  height: 6rem;
+  width: 6rem;
+  background-color: white;
+  border-radius: 100%;
+  border: 2px solid black;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.barra-lateral .imagen-salir {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* Barra Lateral Navegacion */
+.barra-lateral .navegacion li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  padding: .8rem 0;
+  border-top: 1px solid white;
+}
+.barra-lateral .navegacion {
+  height: 96%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.barra-lateral .navegacion::-webkit-scrollbar {
+  width: .5rem;
+}
+.barra-lateral .navegacion::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: .5rem;
+}
+.barra-lateral .navegacion p {
+  opacity: 1;
+  white-space: nowrap;
+  transition: opacity 0.5s ease;
+  color: white;
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 400;
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-barra-laterl);
+}
+.navegacion li p.oculto {
+  opacity: 0;
+}
+.navegacion ul {
+  padding: 0;
+}
+.navegacion li img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.pie-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: grey;
+  width: 100%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  top: 1;
+  margin: 0;
+  font-size: 1.55rem;
+  margin-right: 2rem;
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  footer p {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer p {
+    font-size: 1.45rem;
+  }
+  .contenedor-pagina {
+    height: 85.6%;
+  }
+}
+
+
+/* Estilos Pagina ERROR */
+.header-error {
+  background-color: grey;
+}
+.header-error h1 {
+  font-size: 5rem;
+  font-family: "Archivo", sans-serif;
+}
+.contenido-error {
+  background-color: #fc3434;
+  width: 100%;
+  height: 90.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenido-texto p {
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+}
+.contenido-texto h1 {
+ margin-bottom: 1rem; 
+ font-family: "Archivo", sans-serif;
+ font-weight: 700;
+}
+.contenedor-error {
+  background-color: white;
+  padding: 2rem;
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.contenido-imagen {
+  width: 40rem;
+  height: 40rem;
+}
+.texto-cerrar {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.texto-cerrar a {
+  font-family: "Archivo", sans-serif;
+  color: black;
+  text-decoration:underline;
+  font-size: 2.5rem;
+
+}
+.texto-cerrar a:hover {
+  color: orangered;
+}
+
+@media (max-width: 1280px) {
+    .contenido-error {
+      height: 91%;
+    }
+    .header-error h1 {
+      font-size: 4rem;
+    }
+    .contenedor-error {
+      width: 40rem;
+      height: 60%;
+    }
+    .contenido-texto h1 {
+      font-size: 2.7rem;
+    }
+    .contenido-texto p {
+      font-size: 1.7rem;
+    }
+    .contenido-imagen {
+      width: 25rem;
+      height: 25rem;
+    }
+    .texto-cerrar a {
+      font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenido-error {
+      height: 88%;
+    }
+    .contenedor-error {
+      height: 65%;
+    }
+    .contenido-texto h1 {
+      font-size: 2.5rem;
+    }
+    .contenido-texto p {
+      font-size: 1.5rem;
+    }
+    .contenido-imagen {
+      width: 20rem;
+      height: 20rem;
+    }
+    .texto-cerrar a {
+      font-size: 1.5rem;
+    }
+    .contenido-imagen {
+      width: 20rem;
+      height: 20rem;
+    }
+}
